@@ -10,6 +10,7 @@ ncompose system install   # once: the boot-time loopback alias pool (asks for su
 
 ## Releasing a new version
 
-1. Bump `version` in ncompose's `Cargo.toml`, commit, then `git tag vX.Y.Z && git push origin vX.Y.Z`.
-   The release workflow publishes `ncompose-X.Y.Z-macos-universal.tar.gz` and its `.sha256`.
-2. Here, update `url` and `sha256` in `Formula/ncompose.rb`, then commit and push.
+Bump `version` in ncompose's `Cargo.toml`, commit, then `git tag vX.Y.Z && git push origin vX.Y.Z`.
+The release workflow publishes `ncompose-X.Y.Z-macos-universal.tar.gz` and then commits the new
+`url` and `sha256` to `Formula/ncompose.rb` here, using a write-enabled deploy key whose private
+half is the `TAP_DEPLOY_KEY` secret in mach25/ncompose.
