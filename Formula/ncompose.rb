@@ -1,8 +1,8 @@
 class Ncompose < Formula
   desc "Docker Compose for native macOS binaries"
   homepage "https://github.com/mach25/ncompose"
-  url "https://github.com/mach25/ncompose/releases/download/v0.0.1/ncompose-0.0.1-macos-universal.tar.gz"
-  sha256 "4beeda8c11f599387eb93637247cc2fb04c990429b043ea749166cc545c1c55d"
+  url "https://github.com/mach25/ncompose/releases/download/v0.0.2/ncompose-0.0.2-macos-universal.tar.gz"
+  sha256 "46480937ef98df051b271cf30bda748557c1be6501b58f71bf49612e48bde04e"
   license any_of: ["MIT", "Apache-2.0"]
 
   depends_on :macos
